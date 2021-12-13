@@ -24,9 +24,7 @@ export class AppComponent {
 
   constructor(
     private store: Store<AppState>
-  ) // private donuts: Store<DonutsState>,
-  // private pickles: Store<PicklesState>
-  {}
+  )  {}
 
   // Dispatch an addPickles action
   addPickles(pickles: number): void {
@@ -57,7 +55,6 @@ export class AppComponent {
   // Dispatch an addDonuts action
   addDonuts(donuts: number): void {
     console.log('Dispatching addDonuts action');
-    console.log(this.donutsInBasket$);
     this.store.dispatch({
       type: DonutActionTypes.SaveDonuts,
       payload: donuts,
