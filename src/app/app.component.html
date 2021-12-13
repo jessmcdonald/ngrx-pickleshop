@@ -1,0 +1,21 @@
+<hello name="{{ name }}"></hello>
+
+<section class="container-pickles">
+  <p>
+    Total Number of Pickles in your basket:
+    {{ (picklesInBasket$ | async)?.picklesCount }}
+  </p>
+  <button (click)="addPickles(1)">Add a Pickle</button>
+  <button (click)="removePickles(1)">Remove a Pickle</button>
+  <button (click)="removeAllPickles()">Remove All Pickles</button>
+</section>
+
+<section class="container-donuts">
+  <p>
+    Total Number of Donuts in your basket:
+    {{ (donutsInBasket$ | async)?.donutsCount }}
+  </p>
+  <button (click)="addDonuts(1)">Add a Donut</button>
+  <button (click)="removeDonuts(1)">Remove a Donut</button>
+  <button (click)="removeAllDonuts()">Remove All Donuts</button>
+</section>

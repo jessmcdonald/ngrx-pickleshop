@@ -1,0 +1,27 @@
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button {
+  padding: 5px;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+
+.container-pickles {
+  margin: 20px;
+
+  button {
+    background-color: #977add;
+    color: #ffffff;
+  }
+}
+
+.container-donuts {
+  margin: 20px;
+
+  button {
+    background-color: #dd7ac4;
+    color: #ffffff;
+  }
+}
